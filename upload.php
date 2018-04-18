@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     if(count($_FILES['upload']['name']) > 0){
         //Loop through each file
         for($i=0; $i<count($_FILES['upload']['name']); $i++) {
-            //Get the temp file path
+            //creer une boucle
             $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
             $types = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
             if ($_FILES['upload']['size'][$i] > 1000000) {
